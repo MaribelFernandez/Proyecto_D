@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Capitulo 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body> 
+    <style>
+        body {
+        border: 100px solid #ffc0dd;
+        }
+        </style>
+        <button onclick="topFunction()" id="myBtn" title="Volver arriba">Volver arriba</button>
+        
+        <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            }
+</script>
+
+        <article>
+            <center><h1 class="glitter-title">Modelado del sistema.</h1></center>
+            <p><h4>El modelado de sistemas es el proceso para desarrollar modelos abstractos de un sistema, donde cada modelo presenta una visión o perspectiva diferente de dicho sistema.
+                Lenguaje de Modelado Unificado (UML).
+                Los modelos se usan durante el proceso de ingeniería de requerimientos para ayudar a derivar los requerimientos de un sistema.
+            </h4></p>
+            <details>
+                <summary><span class="subrayados">Es posible desarrollar modelos tanto del sistema existente como del sistema a diseñar:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Los modelos del sistema existente se usan durante la ingeniería de requerimientos.</li>
+                    <li>Los modelos del sistema nuevo.</li>
+                </ul>
+            </details>
+            <p><h4>El aspecto más importante de un modelo del sistema es que deja fuera los detalles.</h4></p> 
+            <details>
+                <summary><span class="subrayados">Usted puede desarrollar diferentes modelos para representar el sistema:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Una perspectiva externa, donde se modelen el contexto o entorno del sistema.</li>
+                    <li>Una perspectiva de interacción, donde se modele la interacción entre un sistema y su entorno.</li>
+                    <li>Una perspectiva estructural, donde se modelen la organización de un sistema o la estructura de datos.</li>
+                    <li>Una perspectiva de comportamiento, donde se modele el comportamiento dinámico del sistema.</li>
+                </ul>
+            </details>
+            <details>
+                <summary><span class="subrayados">Usan diagramas definidos en UML.</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Diagramas de actividad.</li>
+                    <li>Diagramas de caso de uso.</li>
+                    <li>Diagramas de secuencias.</li>
+                    <li>Diagramas de clase.</li>
+                    <li>Diagramas de estado.</li>
+                </ul>
+            </details>
+            <details>
+                <summary><span class="subrayados">Hay tres formas en que los modelos gráficos:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Como medio para facilitar la discusión sobre un sistema existente o propuesto.</li>
+                    <li>Como una forma de documentar un sistema existente.</li>
+                    <li>Como una descripción detallada del sistema que sirve para generar una implementación de sistema.</li>
+                </ul>
+            </details>
+            <p><h4>El Lenguaje de Modelado Unificado es un conjunto compuesto por 13 diferentes tipos de diagrama para modelar sistemas de software.</h4></p> 
+        </article>
+
+        <article>
+            <h1><center><p style="background-color: #ffb8d9;">Modelos de contexto.</p></center></h1>
+            <p><h4>En una primera etapa en la especificación de un sistema, debe decidir sobre las fronteras del sistema. determinar cuál funcionalidad se incluirá en el sistema y cuál la ofrece el entorno del sistema.
+                frontera entre un sistema y su entorno es relativamente clara
+                </h4></p>
+                <details>
+                    <summary><span class="subrayados">Modelo del proceso de detención involuntaria.</span></summary>
+                    <center><img src="sistema.png" width="" height="" alt=""></center>
+                </details>
+                <p><h4>La figura es un modelo de un importante proceso de sistema que muestra los procesos en que se utiliza el MHC-PMS.
+                    En un diagrama de actividad UML, las flechas representan el flujo de trabajo de una actividad a otra.
+                </h4></p>
+        </article>
+
+        <article>
+            <h1><center><p style="background-color: #ffb8d9;">Modelos de interacción.</p></center></h1>
+            <p><h4>Todos los sistemas incluyen interacciones de algún tipo. Éstas son interacciones del usuario, que implican entradas y salidas del usuario.</h4></p>
+            <details>
+                <summary><span class="subrayados">Modelado de interacción:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Modelado de caso de uso, que se utiliza principalmente para modelar interacciones entre un sistema y actores externos (usuarios u otros sistemas).</li>
+                    <li>Diagramas de secuencia, que se emplean para modelar interacciones entre componentes del sistema, aunque también pueden incluirse agentes externos.</li>
+                </ul>
+            </details>
+            <h1><center><p style="background-color: #ffb8d9;">Modelado de casos de uso.</p></center>
+                <details>
+                    <summary><span class="subrayados">Caso de uso de transferencia de datos.</span></summary>
+                        <center><img src="medico.png" width="" height="" alt=""></center>
+                </details>
+                <p><h4>Observe que en este caso de uso hay dos actores: el operador que transfiere los datos y el sistema de registro de pacientes.
+                    Los diagramas de caso de uso brindan un panorama bastante sencillo de una interacción.
+                    </h4></p>
+                    <details>
+                        <summary><span class="subrayados">Descripción tabular del caso de uso “transferencia de datos”.</span></summary>
+                        <center><img src="transferencia.png" width="" height="" alt=""></center>
+                    </details>
+                    <details>
+                        <summary><span class="subrayados">Casos de uso que involucran el papel “recepcionista médico”.</span></summary>
+                        <center><img src="recepcionista.png" width="" height="" alt=""></center>
+                    </details>
+                    <h1><center><p style="background-color: #ffb8d9;">Diagramas de secuencia.</p></center></h1>
+                    <p><h4>Los diagramas de secuencia en el UML se usan principalmente para modelar las interacciones entre los actores y los objetos en un sistema,
+                        un diagrama de secuencia muestra la sucesión de interacciones que ocurre durante un caso de uso particular.
+                        </h4></p>
+                        <details>
+                            <summary><span class="subrayados">Diagrama de secuencia para “ver información del paciente”.</span></summary>
+                            <center><img src="rm.png" width="" height="" alt=""></center>
+                            <center><img src="rm2.png" width="" height="" alt=""></center>
+                        </details>
+            </h1>
+        </article>
+
+        <article>
+            <h1><center><p style="background-color: #ffb8d9;">Modelos estructurales.</p></center></h1>
+                <p><h4>Los modelos estructurales de software muestran la organización de un sistema, en términos de los componentes que constituyen dicho sistema y sus relaciones.
+                    se crean cuando se discute y diseña la arquitectura del sistema
+                    </h4></p>
+                    <h1><center><p style="background-color: #ffb8d9;">Diagramas de clase.</p></center></h1>
+                    <p><h4>Pueden usarse cuando se desarrolla un modelo de sistema orientado a objetos
+                        Los diagramas de clase en el UML pueden expresarse con diferentes niveles de detalle.
+                        </h4></p>
+                        <details>
+                            <summary><span class="subrayados">Clases y asociación UML.</summary></span>
+                            <center><img src="paciente.png" width="" height="" alt=""></center>
+                        </details>
+                        <p><h4>El UML no incluye una notación específica para este modelado de bases de datos.</h4></p>
+                        <details>
+                            <summary><span class="subrayados">Clases y asociaciones en el MHC-PMS.</summary></span>
+                            <center><img src="consultor.png" width="" height="" alt=""></center>
+                        </details>
+                        <details>
+                            <summary><span class="subrayados">La clase de consulta.</summary></span>
+                            <center><img src="consulta.png" width="" height="" alt=""></center>
+                        </details>
+                        <h1><center><p style="background-color: #ffb8d9;">Generalización.</p></center></h1>
+                        <p><h4>La generalización es una técnica cotidiana que se usa para gestionar la complejidad. En vez de aprender las características detalladas de cada entidad que se experimenta, dichas entidades se colocan en clases más generales (animales, automóviles, casas,
+                            se aprenden las características de dichas clases. Esto permite deducir que diferentes miembros de estas clases tienen algunas características comunes
+                            En el modelado de sistemas, con frecuencia es útil examinar las clases en un sistema, con la finalidad de ver si hay ámbito para la generalización.
+                            La generalización se muestra como una flecha que apunta hacia la clase más general.
+                            En una generalización, los atributos y las operaciones asociados con las clases de nivel superior también se asocian con las clases de nivel inferior.
+                            parte de la jerarquía de generalización.</h4></p>
+                            <details>
+                                <summary><span class="subrayados">Jerarquía de generalización.</summary></span>
+                                <center><img src="jerarquia.png" width="" height="" alt=""></center>
+                            </details>
+                            <details>
+                                <summary><span class="subrayados">Jerarquía de generalización con detalles agregados.</summary></span>
+                                <center><img src="medico2.png" width="" height="" alt=""></center>
+                            </details>
+                        </article>
+
+                        <article>
+                            <h1><center><p style="background-color: #ffb8d9;">Modelos de comportamiento.</p></center></h1>
+                                <p><h4>Los modelos de comportamiento son modelos dinámicos del sistema conforme se ejecutan.</h4></p>
+                                <details>
+                                    <summary><span class="subrayados">Tales estímulos son de dos tipos:</span></summary>
+                                    <ul class="lista-letra-pequena">
+                                        <li>Datos.</li>
+                                        <li>Eventos.</li>
+                                    </ul>
+                                    </details>
+                                    <details>
+                                        <summary><span class="subrayados">La asociación agregación.</span></summary>                                         
+                                        <center><img src="paciente2.png" width="" height="" alt=""></center>
+                                    </details>
+                                    
+                                    <h1><center><p style="background-color: #ffb8d9;">Diagramas de flujo de datos.</p></center></h1>
+                                    <p><h4>Los diagramas de flujo de datos (DFD) son modelos de sistema que presentan una perspectiva funcional, donde cada transformación constituye una sola función o un solo proceso.</h4></p>
+                                    <h1><center><p style="background-color: #ffb8d9;">Modelado dirigido por datos.</p></center></h1>
+                                    <p><h4>Los modelos dirigidos por datos muestran la secuencia de acciones involucradas en el procesamiento de datos de entrada,
+                                        El UML no soporta diagramas de flujo de datos procesamiento de datos.</h4></p>
+                                        <details>
+                                            <summary><span class="subrayados">Modelo de actividad de la operación de la bomba de insulina.</span></summary>
+                                            <center><img src="sensor.png" width="" height="" alt=""></center>
+                                        </details>
+                                        <h1><center><p style="background-color: #ffb8d9;">Modelado dirigido por un evento.</p></center></h1>
+                                        <p><h4>El modelado dirigido por un evento muestra cómo responde un sistema a eventos exter- nos e internos
+                                            un número finito de estados y que los eventos (estímulos) pueden causar una transición de un estado a otro.
+                                            El UML soporta modelado basado en eventos usando diagramas de estado.
+                                            </h4></p>
+                                            <details>
+                                                <summary><span class="subrayados">Orden de procesamiento.</span></summary>     
+                                                <center><img src="agente.png" width="" height="" alt=""></center>
+                                            </details>
+                                            <details>
+                                                <summary><span class="subrayados">Diagrama de estado de un horno de microondas.</span></summary>   
+                                                <center><img src="potencia.png" width="" height="" alt=""></center>
+                                            </details>
+                                            <details>
+                                                <summary><span class="subrayados">Usar el horno de microondas es:</span></summary>
+                                                <ul class="lista-letra-pequena">
+                                                    <li>Seleccionar el nivel de potencia.</li>
+                                                    <li>Ingresar el tiempo de cocción con el teclado numérico.</li>
+                                                    <li>Presionar “Iniciar”.</li>
+                                                </ul>
+                                            </details>
+                                            <p><h4>En los diagramas de estado UML, los rectángulos redondeados representan estados del sistema.
+                                                Las flechas etiquetadas representan estímulos que fuerzan una transición de un estado a otro.
+                                                estados inicial y final usando círculos rellenos.</h4></p>
+                                                <details>
+                                                    <summary><span class="subrayados">Estados y estímulos para el horno de microondas.</span></summary>
+                                                    <center><img src="estado.png" width="" height="" alt=""></center>
+                                                </details>
+                                                <p><h4>La notación UML permite indicar la actividad que ocurre en un estado.</h4></p>
+                                            </article>
+
+                                            <article>
+                                                <h1><center><p style="background-color: #ffb8d9;">Ingeniería dirigida por modelo.</p></center></h1>
+                                                <p><h4>La ingeniería dirigida por modelo (MDE) es  un enfoque al desarrollo de software donde los modelos, y no los programas, son las salidas principales.</h4></p>
+                                                <details>
+                                                    <summary><span class="subrayados">Los principales argumentos a favor y en contra de MDE son:</span></summary>
+                                                    <ul class="lista-letra-pequena">
+                                                        <li>En favor de la MDE La ingeniería basada en modelo permite a los ingenieros pen- sar sobre sistemas en un nivel de abstracción elevado.</li>
+                                                        <li>Contra la MDE Como se analizó anteriormente, los modelos son una buena forma de facilitar las discusiones sobre un diseño de software</li>
+                                                    </ul>
+                                                </details>
+                                                <h1><center><p style="background-color: #ffb8d9;">Arquitectura dirigida por modelo.</p></center></h1>
+                                                <details>
+                                                    <summary><span class="subrayados">Transformaciones MDA,</span></summary>
+                                                    <center><img src="metodo.png" width="" height="" alt=""></center>
+                                                </details>
+                                                <details>
+                                                    <summary><span class="subrayados">El método de MDA recomienda la producción de tres tipos de modelo de sistema abstracto:</span></summary>
+                                                    <ul class="lista-letra-pequena">
+                                                        <li>Un modelo independiente de computación (CIM) que modela las importantes abstracciones.</li>
+                                                        <li>Un modelo independiente de plataforma (PIM) que modele la operación del sistema sin referencia a su implementación.</li>
+                                                        <li>Modelos específicos de plataforma (PSM) que son transformaciones del modelo independiente de plataforma con un PSM separado para cada plataforma de aplicación.</li>
+                                                    </ul>
+                                                </details> 
+                                                <details>
+                                                    <summary><span class="subrayados">Múltiples modelos específicos de plataforma.</span></summary>
+                                                    <center><img src="traductor.png" width="" height="" alt=""></center>
+                                                </details>
+                                                <h1><center><p style="background-color: #ffb8d9;">UML ejecutable.</p></center></h1>
+                                                <p><h4>Ingeniería dirigida por modelo es que debe ser posible la transformación
+                                                    El UML se desarrolló como un lenguaje para soportar y documentar diseño de software, no como un lenguaje de programación.</h4></p>
+                                                    <details>
+                                                        <summary><span class="subrayados">Número de tipos de modelo se redujo drásticamente a tres tipos de modelo clave:</span></summary>
+                                                        <ul class="lista-letra-pequena">
+                                                            <li>Modelos de dominio que identifican las principales preocupaciones en el sistema.</li>
+                                                            <li>Modelos de clase.</li>
+                                                            <li>Modelos de estado.</li>
+                                                        </ul>
+                                                    </details>
+                                                    <span class="subrayados">&copy; Maribel 2023</span>
+        </article>
+
+        <a href="Capitulo 4.html" class="btn btn-next">Atrás</a>
+        <a href="Capitulo 6.html" class="btn btn-next">Siguiente</a>
+        <a class="boton-inicio" href="index.html">Volver a inicio</a>
+
+
+
+

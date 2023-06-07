@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Capitulo 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body> 
+    <style>
+        body {
+        border: 100px solid #8cd7fa;
+        }
+        </style>
+        
+        <button onclick="topFunction()" id="myBtn" title="Volver arriba">Volver arriba</button>
+        
+        <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            }
+</script>
+
+<article>
+    <center><h1 class="glitter-title">Desarrollo agil de software.</h1></center>
+
+    <p><h4>Las empresas operan ahora en un entorno global que cambia rápidamente.
+        En ese sentido, deben responder frente a nuevas oportunidades y mercados. 
+        Los requerimientos iniciales cambian de modo inevitable, porque los clientes encuentran imposible predecir cómo un sistema afectará sus prácticas operacionales.
+        Los procesos de desarrollo de software que buscan especificar por completo los requerimientos y, luego, diseñar, construir y probar el sistema, no están orientados al desarrollo rápido de software.
+        En algunos tipos de software, como los sistemas de control críticos para la seguridad, donde es esencial un análisis completo del sistema.
+        Los procesos de desarrollo del software rápido se diseñan para producir rápidamente un software útil. 
+        Los procesos de especificación, diseño e implementación siempre están entrelazados. 
+        El sistema se desarrolla en diferentes versiones. 
+        Los métodos ágiles son métodos de desarrollo incremental donde los incrementos son mínimos y, por lo general, se crean las nuevas liberaciones del sistema, y cada dos o tres semanas.
+    </h4></p></article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Métodos ágiles.</p></center></h1>
+
+        <p><h4>Este software lo desarrollaron grandes equipos que trabajaban para diferentes com- pañías. A menudo los equipos estaban geográficamente dispersos y laboraban por largos periodos en el software.
+            Nuevos “métodos ágiles”, los cuales permitieron que el equipo de desarrollo se enfocara en el software en lugar del diseño y la documentación. 
+        </h4></p>
+
+        <details>
+            <summary><span class="subrayado">La filosofía detrás de los métodos ágiles se refleja en el manifiesto ágil, que acordaron muchos de los desarrolladores líderes de estos métodos. Este manifiesto afirma:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Estamos descubriendo mejores formas para desarrollar software.</li>
+                <li>La colaboración con el cliente sobre la negociación del contrato.</li>
+                <li>Aunque exista valor en los objetos a la derecha, valoraremos más los de la izquierda.</li>
+            </ul>
+        </details>
+        <p><h4>Probablemente el método ágil más conocido sea la programación extrema.
+            El éxito de dichos métodos condujo a cierta integración con métodos más tradicionales de desarrollo.
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Los métodos ágiles han tenido mucho éxito para ciertos tipos de desarrollo de sistemas:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Desarrollo del producto.</li>
+                <li>Diseño de sistemas a la medida.</li>
+            </ul>
+        </details>
+
+        <table>
+            <tr>
+              <td class="columna1">Princpio</td>
+              <td class="columna2">Descripción</td>
+            </tr>
+            <tr>
+              <td class="columna1">Participación del cliente.</td>
+              <td class="columna2">Deben intervenir estrechamente durante el proceso de desarrollo.</td>
+            </tr>
+            <tr>
+              <td class="columna1">Entrega incremental.</td>
+              <td class="columna2">El software se desarrolla en incrementos y el cliente especifica los requerimientos.</td>
+            </tr>
+            <tr>
+                <td class="columna1">Personas, no procesos.</td>
+                <td class="columna2">Tienen que reconocerse y aprovecharse las habilidades del equipo de desarrollo.</td>
+              </tr>
+              <tr>
+                <td class="columna1">Adoptar el cambio.</td>
+                <td class="columna2">Esperar a que cambien los requerimientos del sistema.</td>
+              </tr>
+              <tr>
+                <td class="columna1">Mantener simplicidad.</td>
+                <td class="columna2">Enfocarse en la simplicidad tanto en el software a desarrollar como en el proceso de desarrollo. Siempre que sea posible, trabajar de manera activa para eliminar la complejidad del sistema.</td>
+              </tr>
+          </table>
+
+          <p><h4>Quizás algunos miembros del equipo no cuenten con la personalidad adecuada para la participación intensa característica de los métodos ágiles y, en consecuencia, no podrán interactuar adecuadamente con los otros integrantes del equipo.
+            Priorizar los cambios sería extremadamente difícil, sobre todo en sistemas donde existen muchos participantes.
+            Muchas organizaciones, especialmente las grandes compañías, pasan años cambiando su cultura, de tal modo que los procesos se definan y continúen. 
+          </h4></p>
+
+          <details>
+            <summary><span class="subrayado">Se presentan entonces dos preguntas que deberían considerarse junto con los métodos y el mantenimiento ágiles:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>¿Los sistemas que se desarrollan usando un enfoque ágil se mantienen, a pesar del énfasis en el proceso de desarrollo de minimizar la documentación formal?</li>
+                    <li>¿Los métodos ágiles pueden usarse con efectividad para evolucionar un sistema como respuesta a requerimientos de cambio por parte del cliente?</li>
+                </ul>
+          </details>
+          <p><h4>Se estima que la documentación formal describe el sistema.
+            No obstante, según la experiencia del autor con el mantenimiento de sistemas, éste sugiere que el documento clave es el documento de requerimientos del sistema.
+            Sin embargo, quizá la principal dificultad luego de entregar el software sea mantener al cliente interviniendo en el proceso. 
+          </h4></p>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Desarrollo dirigido por un plan y desarrollo ágil.</p></center></h1>
+        <p><h4>Los enfoques ágiles en el desarrollo de software consideran el diseño y la implementación como las actividades centrales en el proceso del software.
+            En un enfoque basado en un plan, la iteración ocurre dentro de las actividades con documentos formales usados para comunicarse entre etapas del proceso. 
+        </p></h4>
+
+        <details>
+            <summary><span class="subrayado">Desarrollo basado en un plan.</span></summary>
+            <center><img src="Captura de pantalla 2023-05-19 174405.png"></center>
+        </details>
+        <p><h4>De hecho, la mayoría de los proyectos de software incluyen prácticas de los enfoques ágil y basado en un plan.
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Para decidir sobre el equilibrio entre un enfoque basado en un plan y uno ágil, se deben responder algunas preguntas técnicas, humanas y organizacionales:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li><span class="subrayado">¿Es importante tener una especificación y un diseño muy detallados antes de dirigirse a la implementación?</span> Siendo así, probablemente usted tenga que usar un enfoque basado en un plan.</li>
+                <li><span class="subrayado">¿Es práctica una estrategia de entrega incremental, donde se dé el software a los clientes y se obtenga así una rápida retroalimentación de ellos?</span>De ser el caso, considere el uso de métodos ágiles.</li>
+                <li><span class="subrayado">¿Qué tan grande es el sistema que se desarrollará?</span>Los métodos ágiles son más efectivos cuando el sistema logra diseñarse con un pequeño equipo asignado que se comunique de manera informal.</li>
+                <li><span class="subrayado">¿Qué tipo de sistema se desarrollará?</span>? Los sistemas que demandan mucho análisis antes de la implementación (por ejemplo, sistema en tiempo real con requerimientos de temporización compleja), por lo general, necesitan un diseño bastante detallado para realizar este análisis.</li>
+                <li><span class="subrayado">¿Cuál es el tiempo de vida que se espera del sistema</span>Los sistemas con lapsos de vida prolongados podrían requerir más documentación de diseño, para comunicar al equipo de apoyo los propósitos originales de los desarrolladores del sistema.</li>
+                <li><span class="subrayado">¿Qué tecnologías se hallan disponibles para apoyar el desarrollo del sistema?</span>Los métodos ágiles se auxilian a menudo de buenas herramientas para seguir la pista de un diseño en evolución.</li>
+                <li><span class="subrayado">¿Cómo está organizado el equipo de desarrollo? </span>
+            </ul>
+        </details>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Programación extrema.</p></center></h1>
+        <p><h4>La programación extrema (XP) es quizás el método ágil mejor conocido y más ampliamente usado.
+            En la programación extrema, los requerimientos se expresan como escenarios (llama- dos historias de usuario), que se implementan directamente como una serie de tareas. Los programadores trabajan en pares y antes de escribir el código desarrollan pruebas para cada tarea. Todas las pruebas deben ejecutarse con éxito.
+             </h4></p>
+
+            <details>
+                <summary><span class="subrayado">La programación extrema incluye algunas prácticas, las cuales reflejan los principios de los métodos ágiles:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>El desarrollo incremental se apoya en pequeñas y frecuentes liberaciones del sistema.</li>
+                    <li>La inclusión del cliente se apoya a través de un enlace continuo con el cliente en el equipo de desarrollo.</li>
+                    <li>Las personas, no los procesos, se basan en la programación en pares, en la propiedad colectiva del código del sistema y en un proceso de desarrollo sustentable que no incluya jornadas de trabajo excesivamente largas.</li>
+                    <li>El cambio se acepta mediante liberaciones regulares del sistema a los clientes, desa- rrollo de primera prueba, refactorización para evitar degeneración del código e integración continua de nueva funcionalidad.</li>
+                    <li>Mantener la simplicidad se logra mediante la refactorización constante.</li>
+                </ul>
+            </details>
+            <p><h4>En un proceso XP, los clientes intervienen estrechamente en la especificación y priorización de los requerimientos del sistema.</h4></p>
+
+            <table>
+                <tr>
+                  <td class="columna1">Principio o práctica.</td>
+                  <td class="columna2">Descripción.</td>
+                </tr>
+                <tr>
+                  <td class="columna1">Planeación incremental.</td>
+                  <td class="columna2">Los requerimientos se registran en tarjetas de historia (story cards). Los requerimientos se registran en tarjetas de historia (story cards) y las historias que se van a incluir en una liberación se determinan por el tiempo disponible y la prioridad relativa. Los desarrolladores desglosan dichas historias en “tareas” de desarrollo.</td>
+                </tr>
+                <tr>
+                  <td class="columna1">Liberaciones pequeñas.</td>
+                  <td class="columna2">Al principio se desarrolla el conjunto mínimo de funcionalidad útil.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Diseño simple.</td>
+                    <td class="columna2">Se realiza un diseño suficiente para cubrir sólo aquellos requerimientos actuales.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Desarrollo de la primera.</td>
+                    <td class="columna2">Se usa un marco de referencia de prueba de unidad automatizada al escribir las pruebas prueba	para una nueva pieza de funcionalidad, antes de que esta última se implemente.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Refactorización.</td>
+                    <td class="columna2">Refactoricen de manera continua el código y, tan pronto como sea posible, se encuentren mejoras de éste.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Programación en pares.</td>
+                    <td class="columna2">Los desarrolladores trabajan en pares, y cada uno comprueba el trabajo del otro.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Propiedad colectiva.</td>
+                    <td class="columna2">Los desarrolladores en pares laboran en todas las áreas del sistema. Cualquiera puede cambiar cualquier función.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Integración continua.</td>
+                    <td class="columna2">Tan pronto como esté completa una tarea, se integra en todo el sistema.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Ritmo sustentable.</td>
+                    <td class="columna2">Grandes cantidades de tiempo extra no se consideran aceptables, pues el efecto neto de este tiempo libre con frecuencia es reducir la calidad del código y la productividad de término medio.</td>
+                </tr>
+                <tr>
+                    <td class="columna1">Cliente en sitio.</td>
+                    <td class="columna2">Un representante del usuario final del sistema (el cliente) tiene que disponer de tiempo completo para formar parte del equipo XP.</td>
+                </tr>
+              </table>
+
+              <p><h4>En términos XP, éste es un “pico” (spike), es decir, un incremento donde no se realiza programación. 
+                Cuando un programador diseña el sistema para crear una nueva versión, debe correr todas las pruebas automatizadas existentes.
+                Un problema general con el desarrollo incremental es que tiende a degradar la estruc- tura del software, de modo que los cambios al software se vuelven cada vez más difíciles de implementar. 
+                La programación extrema aborda este problema al sugerir que el software debe refac- torizarse continuamente. 
+                Entonces, en principio, el software siempre debe ser de fácil comprensión y cambiar a medida que se implementen nuevas historias. No siempre es el caso. En ocasiones la presión del desarrollo significa que la refactorización se demora, porque se dedica el tiempo a la implementación de una nueva funcionalidad.</h4></p>
+                <details>
+                    <summary><span class="subrayado">Tareas.</span></summary>
+                    <center><img src="tareas.png"></center>
+                </details> 
+                <p><h4>
+                Muchas compañías que adoptaron XP no usan todas las prácticas de programación extrema.
+              </h4></p>
+
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Pruebas en XP.</p></center></h1>
+        <p><h4>Una de las diferencias importantes entre desarrollo incremental y desarrollo dirigido por un plan está en la forma en que el sistema se pone a prueba.
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Las características clave de poner a prueba en XP son:</summary></span>
+           <ul class="lista-letra-pequena">
+            <li>Desarrollo de primera prueba.</li>
+            <li>Desarrollo de pruebas incrementales a partir de escenarios.</li>
+            <li>Involucramiento del usuario en el desarrollo y la validación de pruebas.</li>
+            <li>El uso de marcos de pruebas automatizadas.</li>
+           </ul>
+        </details>
+        <p><h4>El desarrollo de la primera prueba es una de las innovaciones más importantes en XP. 
+            Escribir pruebas implícitamente define tanto una interfaz como una especificación del comportamiento para la funcionalidad a desarrollar. 
+            Los implementadores de tarea deben comprender ampliamente la especificación.
+            Los requerimientos de usuario en XP se expresan como escenarios o historias.
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Prueba 4: Comprobación de dosis.</span></summary>
+            <center><img src="comprobacion.png"></center>
+        </details>
+        <p><h4>El papel del cliente en el proceso de pruebas es ayudar a desarrollar pruebas de aceptación para las historias.
+            En XP, la prueba de aceptación, como el desarrollo, es incremental. El cliente que forma parte del equipo escribe pruebas conforme avanza el desarrollo. 
+            Contar con el cliente para apoyar el desarrollo de pruebas de aceptación en ocasiones es una gran dificultad en el proceso de pruebas XP.
+            Conforme se automatizan las pruebas, siempre hay una serie de pruebas que se ejecutan rápida y fácilmente. 
+            El desarrollo de la primera prueba y las pruebas automatizadas por lo general dan por resultado un gran número de pruebas que se escriben y ejecutan. 
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Existen tres razones para ello:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Los programadores prefieren programar que probar.</li>
+                <li>Algunas pruebas llegan a ser muy difíciles de escribir de manera incremental.</li>
+                <li>Es difícil juzgar la totalidad de un conjunto de pruebas.</li>
+            </ul>
+        </details>
+        <p><h4>En consecuencia, aunque un gran conjunto de pruebas ejecutadas regularmente da la impresión de que el sistema está completo y es correcto, esto tal vez no sea el caso. Si las pruebas no se revisan y se escriben más pruebas después del desarrollo, entonces pueden entregarse bugs.</h4></p>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Programación en pares</p></center></h1>
+        <p><h4>Otra práctica innovadora que se introdujo en XP es que los programadores trabajan en pares para desarrollar el software.</h4></p>
+        <details>
+            <summary><span class="subrayado">El uso de la programación en pares tiene algunas ventajas:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Apoya la idea de la propiedad y responsabilidad colectivas para el sistema.</li>
+                <li>Actúa como un proceso de revisión informal, porque al menos dos personas observan cada línea de código.</li>
+                <li>Ayuda a la refactorización, que es un proceso de mejoramiento del software.</li>
+            </ul>
+        </details>
+        <p><h4>Al respecto, tal vez se pensaría que la programación en pares es menos eficiente que la programación individual.
+            En sí mismo, esto hace que la programación de este tipo valga la pena.</h4></p>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Administración de un proyecto ágil.</p></center></h1>
+        <p><h4>La responsabilidad principal de los administradores del proyecto de software es dirigir el proyecto, de modo que el software se entregue a tiempo y con el presupuesto planeado para ello. Supervisan el trabajo de los ingenieros de software y monitorizan el avance en el desarrollo del software.
+            El enfoque estándar de la administración de proyectos es el basado en un plan. 
+            Como cualquier otro proceso de diseño de software profesional, el desarrollo ágil tiene que administrarse de tal modo que se busque el mejor uso del tiempo y de los recursos dis- ponibles para el equipo. 
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Existen tres fases con Scrum. La primera es la planeación del bosquejo, donde se establecen los objetivos generales del proyecto y el diseño de la arquitectura de software.</span></summary>
+            <center><img src="valoracion.png"></center>
+        </details>
+        <p><h4>A esto le sigue una serie de ciclos sprint, donde cada ciclo desarrolla un incremento del sistema. Finalmente, la fase de cierre del proyecto concluye el proyecto.
+            La característica innovadora de Scrum es su fase central, a saber, los ciclos sprint. Un sprint de Scrum es una unidad de planeación en la que se valora el trabajo que se va a realizar.
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">Las características clave de este proceso son las siguientes:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Los sprints.</li>
+                <li>El punto de partida para la planeación es la cartera del producto.</li>
+                <li>La fase de selección.</li>
+                <li>El equipo se organiza para desarrollar el software.</li>
+                <li>Al final del sprint, el trabajo hecho se revisa y se presenta a los participantes.</li>
+            </ul>
+        </details>
+        <p><h4>La idea detrás de Scrum es que debe autorizarse a todo el equipo para tomar decisio- nes, de modo que se evita deliberadamente el término “administrador del proyecto”.
+            Todo el equipo asiste a las reuniones diarias, que en ocasiones son reuniones en las que los participantes no se sientan, para hacerlas breves y enfocadas. 
+        </h4></p>
+        <details>
+            <summary><span class="subrayado">En la Web existen muchos reportes anecdóticos del uso exitoso del Scrum. Rising y Janoff (2000) discuten su uso exitoso en un entorno de desarrollo de software para tele- comunicaciones y mencionan sus ventajas del modo siguiente:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>El producto se desglosa en un conjunto de piezas manejables y comprensibles.</li>
+                <li>Los requerimientos inestables no retrasan el progreso.</li>
+                <li>Todo el equipo tiene conocimiento de todo y, en consecuencia, se mejora la comunicación entre el equipo.</li>
+                <li>Los clientes observan la entrega a tiempo de los incrementos y obtienen retroalimentación sobre cómo funciona el producto.</li>
+                <li>Se establece la confianza entre clientes y desarrolladores, a la vez que se crea una cultura positiva donde todos esperan el triunfo del proyecto.</li>
+            </ul>
+        </details>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #aee5ff;">Escalamiento de métodos ágiles.</p></center></h1>
+        <p><h4>Los métodos ágiles se desarrollaron para usarse en pequeños equipos de programación, que podían trabajar juntos en la misma habitación y comunicarse de manera informal.</h4></p>
+        <details>
+            <summary><span class="subrayado">El desarrollo de grandes sistemas de software difiere en algunas formas del desarrollo de sistemas pequeños:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Los grandes sistemas son, por lo general, colecciones de sistemas separados en comunicación, donde equipos separados desarrollan cada sistema.</li>
+                <li>Los grandes sistemas son “sistemas abandonados”.</li>
+                <li>Donde muchos sistemas se integran para crear un solo sistema, una fracción signifi- cativa del desarrollo se ocupa en la configuración del sistema, y no en el desarrollo del código original.</li>
+                <li>Los grandes sistemas y sus procesos de desarrollo por lo común están restringidos por reglas y regulaciones externas.</li>
+                <li>Los grandes sistemas tienen un tiempo prolongado de adquisición y desarrollo.</li>
+                <li>Los grandes sistemas tienen por lo general un conjunto variado de participantes.</li>
+            </ul>
+        </details>
+        <details>
+            <summary><span class="subrayado">Existen dos perspectivas en el escalamiento de los métodos ágiles:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Una perspectiva de “expansión” (scaling up), que se interesa por el uso de dichos métodos para el desarrollo de grandes sistemas de software que no logran desarrollarse con equipos pequeños.</li>
+                <li>Una perspectiva de “ampliación” (scaling out), que se interesa por que los métodos ágiles se introduzcan en una organización grande con muchos años de experiencia en el desarrollo de software.</li>
+            </ul>
+        </details>
+        <p><h4>Las compañías de software pequeñas que desarrollan productos de software están entre quienes adoptan con más entusiasmo los métodos ágiles.</h4></p>
+        <details>
+            <summary><span class="subrayado">Es difícil introducir los métodos ágiles en las grandes compañías por algunas razones:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Los gerentes del proyecto carecen de experiencia con los métodos ágiles.</li>
+                <li>Las grandes organizaciones tienen a menudo procedimientos y estándares de calidad que se espera sigan todos los proyectos.</li>
+                <li>Los métodos ágiles parecen funcionar mejor cuando los miembros del equipo tienen un nivel de habilidad relativamente elevado.</li>
+                <li>Quizás haya resistencia cultural contra los métodos ágiles.</li>
+            </ul>
+        </details>
+        <p><h4>Introducir y sostener el uso de los métodos ágiles a lo largo de una organización grande es un proceso de cambio cultural.</h4></p>
+        <span class="subrayados">&copy; Maribel 2023</span>
+    </article>
+
+
+    <a href="Capitulo 2.html" class="btn btn-next">Atrás</a>
+    <a href="Capitulo 4.html" class="btn btn-next">Siguiente</a>
+    <a class="boton-inicio" href="index.html">Volver a inicio</a>

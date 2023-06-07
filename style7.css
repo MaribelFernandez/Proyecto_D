@@ -1,0 +1,95 @@
+@keyframes glitter {
+    0% { color: #e0c9a6;}
+    25% { color: #f0d4ab;}
+    50% { color: #dfc399;}
+    75% { color: #dfba84;}
+    100% { color: #e9b261;}
+  }
+
+
+.glitter-title {
+    animation: glitter 5s linear infinite;
+  }
+
+article {
+	border: 3px solid #dfcdb1;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+article h1 {
+	margin-top: 0;
+}
+
+summary {
+    font-size: 15px;
+  }
+
+  .lista-letra-pequena li {
+    font-size: 16px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #dab47c;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #d6b98d;
+}
+
+.subrayados {
+    text-decoration: underline;
+    text-decoration-color: #dab47c;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+
+
+  .btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #008CBA;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn-next {
+    background-color: hsl(39, 63%, 77%);
+  }
+  
+  .btn:hover {
+    background-color: hsl(39, 66%, 69%);
+    color: #000000;
+  }
+
+  .boton-inicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: hsl(39, 63%, 77%);
+    color: #333;
+    text-decoration: none;
+    border: 1px solid hsl(40, 30%, 86%);
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }

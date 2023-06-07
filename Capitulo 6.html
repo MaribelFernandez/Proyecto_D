@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Capitulo 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body> 
+    <style>
+        body {
+        border: 100px solid hsl(39, 63%, 77%);
+        }
+        </style>
+        <button onclick="topFunction()" id="myBtn" title="Volver arriba">Volver arriba</button>
+        
+        <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            }
+</script>
+
+        <article>
+            <center><h1 class="glitter-title">Decisiones en el diseño arquitectónico.</h1></center>
+            <p><h4>El diseño arquitectónico es un proceso creativo en el cual se diseña una organización del sistema que cubrirá los requerimientos funcionales y no funcionales de éste. Puesto que se trata de un proceso creativo, las actividades dentro del proceso dependen del tipo de sistema que se va a desarrollar, los antecedentes y la experiencia del arquitecto del sistema, así como de los requerimientos específicos del sistema.</h4></p>
+            <p><h4>Durante el proceso de diseño arquitectónico, los arquitectos del sistema deben tomar algunas decisiones estructurales que afectarán profundamente el sistema y su proceso de desarrollo.</h4></p>
+            <details>
+                <summary><span class="subrayados">Deben considerar las siguientes preguntas fundamentales sobre el sistema:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>¿Existe alguna arquitectura de aplicación genérica que actúe como plantilla para el sistema que se está diseñando?</li>
+                    <li>¿Cómo se distribuirá el sistema a través de algunos núcleos o procesadores?</li>
+                    <li>Qué patrones o estilos arquitectónicos pueden usarse?</li>
+                    <li>¿Cuál será el enfoque fundamental usado para estructurar el sistema?</li>
+                    <li>¿Cómo los componentes estructurales en el sistema se separarán en subcomponentes?</li>
+                    <li>¿Qué estrategia se usará para controlar la operación de los componentes en el sistema?</li>
+                    <li>¿Cuál organización arquitectónica es mejor para entregar los requerimientos no funcionales del sistema?</li>
+                    <li>¿Cómo se evaluará el diseño arquitectónico?</li>
+                    <li>¿Cómo se documentará la arquitectura del sistema?</li>
+                </ul>
+            </details>
+            <p><h4>Cuando se diseña una arquitectura de sistema, debe decidirse qué tienen en común el sistema y las clases de aplicación más amplias, con la finalidad de determinar cuánto conocimiento se puede reutilizar de dichas arquitecturas de aplicación.</h4></p>
+            <p><h4>Para sistemas embebidos y sistemas diseñados para computadoras personales, por lo general, hay un solo procesador y no tendrá que diseñar una arquitectura distribuida para el sistema. Sin embargo, los sistemas más grandes ahora son sistemas distribuidos donde el software de sistema se distribuye a través de muchas y diferentes computadoras.</h4></p>
+            <details>
+                <summary><span class="subrayados">Debido a la estrecha relación entre los requerimientos no funcionales y la arquitectura de software, el estilo y la estructura arquitectónicos particulares que se elijan para un sistema dependerán de los requerimientos de sistema no funcionales:</span></summary>
+                    <ul class="lista-letra-pequena">
+                        <li><span class="subrayados">Rendimiento:</span> Si el rendimiento es un requerimiento crítico, la arquitectura debe diseñarse para localizar operaciones críticas dentro de un pequeño número de componentes, con todos estos componentes desplegados en la misma computadora en vez de distribuirlos por la red.</li>
+                        <li><span class="subrayados">Seguridad:</span> Si la seguridad es un requerimiento crítico, será necesario usar una estructura en capas para la arquitectura, con los activos más críticos protegidos en las capas más internas, y con un alto nivel de validación de seguridad aplicado a dichas capas.</li>
+                        <li><span class="subrayados">Protección:</span> Si la protección es un requerimiento crítico, la arquitectura debe dise- ñarse de modo que las operaciones relacionadas con la protección se ubiquen en algún componente individual o en un pequeño número de componentes.</li>
+                        <li><span class="subrayados">Disponibilidad:</span> Si la disponibilidad es un requerimiento crítico, la arquitectura tiene que diseñarse para incluir componentes redundantes de manera que sea posible sustituir y actualizar componentes sin detener el sistema. </li>
+                    </ul>
+            </details>
+        </article>
+            <article>
+                <h1><center><p style="background-color: #e1c190;">Sistemas de información.</p></center></h1>
+                <p><h4>Los sistemas de gestión de información y recursos, por lo general, son ahora sistemas basados en la Web donde las interfaces de usuario se implementan con el uso de un navegador Web.</h4></p>
+                <p><h4>La organización de servidores en dichos sistemas refleja usualmente el modelo gené- rico en cuatro capas presentadas.</h4></p>
+                <details>
+                    <summary><span class="subrayados">Dichos sistemas se suelen implementar como arquitecturas cliente-servidor de multinivel:</span></summary>
+                    <ul class="lista-letra-pequena">
+                        <li>El servidor Web es responsable de todas las comunicaciones del usuario, y la interfaz de usuario se pone en función mediante un navegador Web.</li>
+                        <li>El servidor de aplicación es responsable de implementar la lógica específica de la aplicación, así como del almacenamiento de la información y las peticiones de recuperación.</li>
+                        <li>El servidor de la base de datos mueve la información hacia y desde la base de datos y, además, manipula la gestión de transacciones.</li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <h1><center><p style="background-color: hsl(39, 63%, 77%);">Sistemas de procesamiento de lenguaje Python.</p></center></h1>
+                <p><h4>Los sistemas de procesamiento de lenguaje convierten un lenguaje natural o artificial en otra representación del lenguaje y, para lenguajes de programación.</h4></p>
+                <details>
+                    <summary><span class="subrayados">Los compiladores de lenguaje de programación que forman parte de un entorno de programación más general tienen una arquitectura genérica que incluye los siguientes componentes:</span></summary>
+                    <ul class="lista-letra-pequena">
+                        <li>Un analizador léxico, que toma valores simbólicos (tokens) y los convierte en una forma interna.</li>
+                        <li>Una tabla de símbolos, que contiene información de los nombres de las entidades (variables, de clase, de objeto, etcétera) usados en el texto que se traduce.</li>
+                        <li>Un analizador de sintaxis, el cual verifica la sintaxis del lenguaje que se va a tradu- cir. Emplea una gramática definida del lenguaje y construye un árbol de sintaxis.</li>
+                        <li>Un árbol de sintaxis es una estructura interna que representa el programa a compilar.</li>
+                    </ul>
+                </details>
+                <span class="subrayados">&copy; Maribel 2023</span>
+            </article>
+            <a href="Capitulo 5.html" class="btn btn-next">Atrás</a>
+           <a href="index.html" class="btn btn-next">Siguiente</a>
+           <a class="boton-inicio" href="index.html">Volver a inicio</a>

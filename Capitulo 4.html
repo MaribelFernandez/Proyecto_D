@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Capitulo 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body> 
+    <style>
+        body {
+        border: 100px solid #f5c5ff;
+        }
+        </style>
+        <button onclick="topFunction()" id="myBtn" title="Volver arriba">Volver arriba</button>
+        
+        <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            }
+</script>
+
+<article>
+    <center><h1 class="glitter-title">Administración de requerimientos.</h1></center>
+    <p><h4>Los requerimientos para un sistema son descripciones de lo que el sistema debe hacer: el  servicio que ofrece y las restricciones en su operación. Tales requerimientos reflejan las necesidades de los clientes por un sistema que atienda cierto propósito.        
+    </h4></p>
+
+    <style>
+        h6 {
+          font-family: Arial, sans-serif;
+        }
+      </style>
+      <p><h6>Si una compañía desea otorgar un contrato para un gran proyecto de desarrollo de software, tiene que definir sus necesidades de una forma suficientemente abstracta para que una solución no esté predefinida.</h6></p>
+      <p><h4>Algunos de los problemas que surgen durante el proceso de ingeniería de requerimientios son resultado del fracaso de hacer una separación clara entre esos diferentes niveles de descripción.</h4></p>
+      <details>
+        <summary><span class="subrayados">Los requerimientos del usuario y los requerimientos del sistema se definen del siguiente modo:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Los requerimientos del usuario son enunciados, en un lenguaje natural junto con diagramas, acerca de qué servicios esperan los usuarios del sistema, y de las restricciones con las cuales éste debe operar.</li>
+            <li>Los requerimientos del sistema son descripciones más detalladas de las funciones, los servicios y las restricciones operacionales del sistema de software.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><span class="subrayados">Requerimientos funcionales y no funcionales.</span></summary>
+        <center><img src="requerimiento.png"></center>
+      </details>
+      <p><h4>Es necesario escribir los requerimientos con diferentes niveles de detalle, ya que varios lectores los usarán de distintas formas.</h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Requerimientos funcionales y no funcionales.</p></center></h1>
+    <details>
+        <summary><span class="subrayados">A menudo, los requerimientos del sistema de software se clasifican como requerimientos funcionales o requerimientos no funcionales:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Requerimientos funcionales Son enunciados acerca de servicios que el sistema debe proveer, de cómo debería reaccionar el sistema a entradas particulares y de cómo debería comportarse el sistema en situaciones específicas.</li>
+            <center><img src="requerimiento2.png"></center>
+            <li>Requerimientos no funcionales: Son limitaciones sobre servicios o funciones que ofrece el sistema. Incluyen restricciones tanto de temporización y del proceso de desarrollo, como impuestas por los estándares.</li>
+        </ul>
+    </details>
+    <p><h4>En realidad, la distinción entre los diferentes tipos de requerimientos no es tan clara como sugieren estas definiciones sencillas. Un requerimiento de un usuario interesado por la seguridad, como el enunciado que limita el acceso a usuarios autorizados, parecería un requerimiento no funcional.</h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Requerimientos funcionales.</p></center></h1>
+    <p><h4>Los requerimientos funcionales para un sistema refieren lo que el sistema debe hacer.
+        Los requerimientos funcionales del sistema varían desde requerimientos generales que cubren lo que tiene que hacer el sistema, hasta requerimientos muy específicos.
+        La inexactitud en la especificación de requerimientos causa muchos problemas en la ingeniería de software. 
+        En principio, la especificación de los requerimientos funcionales de un sistema debe ser completa y consistente. 
+    </h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Requerimientos no funcionales.</p></center></h1>
+    <p><h4>Son requerimientos que no se relacionan directamente con los servicios.
+        Pueden relacionarse con propiedades emergentes del sistema, como fiabilidad, tiempo de respuesta y uso de almacenamiento. De forma alternativa, pueden definir restricciones sobre la implementación del sistema, como las capacidades de los dispositivos I/O o las representaciones de datos usados en las interfaces con otros sistemas.
+        Los requerimientos no funcionales, como el rendimiento, la seguridad o la disponibilidad, especifican o restringen por lo general características del sistema como un todo. 
+        Aunque es posible identificar con regularidad cuáles componentes de sistema implementan requerimientos funcionales específicos.
+    </h4></p>
+    <details>
+        <summary><span class="subrayados">Por lo general es más difícil relacionar componentes con requerimientos no funcionales. La implementación de dichos requerimientos puede propagarse a lo largo del sistema. Para esto existen dos razones:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Los requerimientos no funcionales afectan más la arquitectura global de un sistema que los componentes individuales.</li>
+            <li>Un requerimiento no funcional individual, como un requerimiento de seguridad, podría generar algunos requerimientos funcionales relacionados que definan nuevos servicios del sistema que se requieran.</li>
+        </ul>
+    </details>
+    <p><h4>Los requerimientos no funcionales surgen a través de necesidades del usuario, debido a restricciones presupuestales.</h4></p>
+    <details>
+   <summary><span class="subrayados">Tipos de requerimientos no funcionales.</span></summary>
+   <center><img src="requerimiento3.png"</center>
+    </details>
+    <details>
+        <summary><span class="subrayados">Observe a partir de este diagrama que los requerimientos no funciona- les provienen de características requeridas del software (requerimientos del producto), la organización que desarrolla el software (requerimientos de la organización) o de fuentes externas:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Requerimientos del producto: Estos requerimientos especifican o restringen el comportamiento del software.</li>
+            <li>Requerimientos de la organización: Son requerimientos de sistemas amplios, derivados de políticas y procedimientos en la organización del cliente y del desarrollador.</li> 
+            <li>Requerimientos externos: Este término cubre todos los requerimientos derivados de factores externos al sistema y su proceso de desarrollo.</li>
+            <center><img src="requerimiento4.png"></center>
+        </ul>
+    </details>
+        <p><h4>Por ejemplo, la siguiente meta del sistema es típica de cómo un administrador expresa los requerimientos de usabilidad:
+            Para el personal médico debe ser fácil usar el sistema, y este último debe organizarse de tal forma que minimice los errores del usuario.
+            Siempre que sea posible, se deberán escribir de manera cuantitativa los requerimientos no funcionales, de manera que puedan ponerse objetivamente a prueba.
+        </h4></p>
+
+            <h1><center><p style="background-color: #f1aeff;">Métricas para especificar requerimientos no funcionales.</p></center></h1>
+        <table>
+            <tr>
+              <td class="columna1">Propiedad.</td>
+              <td class="columna2">Medida</td>
+            </tr>
+            <tr>
+              <td class="columna1">Rapidez.</td>
+              <td class="columna2"><p>Transacciones/segundo procesadas.</p> 
+                <p>Tiempo de respuesta usuario/evento.</p> 
+                <p>Tiempo de regeneración de pantalla.</p>
+            </tr>
+            <tr>
+                <td class="columna1">Tamaño.</td>
+                <td class="columna2"><p>Mbytes.</p>
+                    <p></p>Número de chips ROM.</p>
+                    </td>
+            </tr>
+            <tr>
+                <td class="columna1">Facilidad de uso.</td>
+                <td class="columna2"><p>Tiempo de capacitación.</p>
+                <p>Número de cuadros de ayuda.</p></td>
+              </tr>
+            <tr>
+                <td class="columna1">Fiabilidad.</td>
+                <td class="columna2"><p>Tiempo medio para falla.</p>
+                <p>Probabilidad de indisponibilidad.</p>
+            <p>Tasa de ocurrencia de falla.</p>
+            <p>Disponibilidad.</p></td>
+            </tr>
+            <tr>
+                <td class="columna1">Robustez.</td>
+                <td class="columna2"><p>Tiempo de reinicio después de falla.</p>
+                <p>Porcentaje de eventos que causan falla.</p>
+                <p>Probabilidad de corrupción de datos en falla.</p>
+            </td>
+            </tr>
+            <tr>
+                <td class="columna1">Portabilidad.</td>
+                <td class="columna2"><p>Porcentaje de enunciados dependientes de objetivo.</p>
+                <p>Número de sistemas objetivo.</p>
+            </td>
+            </tr>
+        </table>
+            <p><h4>Usted puede medir dichas características cuando el sistema se pone a prueba para comprobar si éste cumple o no cumple con sus requerimientos no funcionales.
+                Los requerimientos no funcionales entran a menudo en conflicto e interactúan con otros requerimientos funcionales o no funcionales. 
+                En la práctica, en el documento de requerimientos, resulta difícil separar los requerimientos funcionales de los no funcionales. 
+                No obstante, se deben destacar de manera explícita los requerimientos que están claramente relacionados con las propiedades emergentes del sistema.
+                Los requerimientos no funcionales, como los requerimientos de fiabilidad, protección y confidencialidad, son en particular importantes para los sistemas fundamentales.
+            </p></h4>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">El documento de requerimientos de software.</p></center></h1>
+    <p><h4>El documento de requerimientos de software (llamado algunas veces especificación de requerimientos de software o SRS) es un comunicado oficial de lo que deben implementar los desarrolladores del sistema. Incluye tanto los requerimientos del usuario para un sis- tema, como una especificación detallada de los requerimientos del sistema.
+        Son esenciales los documentos de requerimientos cuando un contratista externo diseña el sistema de software. 
+        Este enfoque es adecuado para sistemas empresariales donde los requerimientos son inestables. 
+        El documento de requerimientos tiene un conjunto variado de usuarios, desde el administrador ejecutivo de la organización que paga por el sistema, hasta los ingenie- ros responsables del desarrollo del software. 
+    </h4></p>
+    <details>
+        <summary><span class="subrayados">Usuarios de un documento de requerimientos.</span></summary>
+        <center><img src="usuarios.png"></center>
+    </details>
+    <p><h4>La diversidad de posibles usuarios significa que el documento de requerimientos debe ser un compromiso entre la comunicación de los requerimientos a los clientes.
+        El nivel de detalle que se incluya en un documento de requerimientos depende del tipo de sistema a diseñar y el proceso de desarrollo utilizado. Los sistemas críticos necesitan.
+    </h4></p>
+    <h1><center><p style="background-color: #f1aeff;">Estructura de un documento de requerimientos.</p></center></h1>
+    <table>
+        <tr>
+          <td class="columna1">Capítulo.</td>
+          <td class="columna2">Descripción.</td>
+        </tr>
+        <tr>
+          <td class="columna1">Prefacio.</td>
+          <td class="columna2">Resumen de los cambios realizados en cada versión.</td>
+        </tr>
+        <tr>
+          <td class="columna1">Introducción.</td>
+          <td class="columna2">Describe la necesidad para el sistema.</td>
+        </tr>
+        <tr>
+            <td class="columna1">Glosario.</td>
+            <td class="columna2">Define los términos técnicos usados en el documento.</td>
+        </tr>
+        <tr>
+            <td class="columna1">Definición de requerimientos del usuario.</td>
+            <td class="columna2">Aquí se representan los servicios que ofrecen al usuario.</td>
+        </tr>
+        <tr>
+            <td class="columna1">Arquitectura del sistema.</td>
+            <td class="columna2">Hay que destacar los componentes arquitectónicos que sean de reutilización.</td>
+        <tr>
+           <td class="columna1">Especificación de requerimientos del sistema.</td>
+           <td class="columna2">Debe representar los requerimientos funcionales y no funcionales con más detalle.</td>
+        </tr>
+        <tr>
+           <td class="columna1">Modelos del sistema.</td>
+           <td class="columna2">Pueden incluir modelos gráficos del sistema que muestren las relaciones entre componentes del sistema, el sistema y su entorno.</td>
+        </tr>
+        <tr>
+          <td class="columna1">Evolución del sistema.</td>
+          <td class="columna2">Describe los supuestos fundamentales sobre los que se basa el sistema, y cualquier cambio anticipado debido a evolución de hardware, cambio en las necesidades del usuario, etc.</td>
+        </tr>
+        <tr>
+          <td class="columna1">Apéndices.</td>
+          <td class="columna2">Brindan información específica y detallada que se relaciona con la aplicación a desarrollar; por ejemplo, descripciones de hardware y bases de datos.</td>
+        </tr>
+        <tr>
+          <td class="columna1">Índice.</td>
+          <td class="columna2">Pueden incluirse en el documento varios índices. Así como un índice alfabético normal, uno de diagramas, un índice de funciones, etcétera.</td>
+        </tr>
+      </table>
+      <h4><center><p style="background-color: #f1aeff;">Problemas con el uso de lenguaje natural para la especificación de requerimientos.</p></center></h4>
+      <p><h4>La flexibilidad del lenguaje natural, que es tan útil para la especificación, causa problemas frecuentemente.</h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Especificación de requerimientos.</p></center></h1>
+    <p><h4>La especificación de requerimientos es el proceso de escribir, en un documento de reque- rimientos, los requerimientos del usuario y del sistema.
+        Los requerimientos del usuario para un sistema deben describir los requerimientos funcionales y no funcionales, de forma que sean comprensibles para los usuarios del sis- tema que no cuentan con un conocimiento técnico detallado. 
+        Los requerimientos del sistema son versiones extendidas de los requerimientos del usuario que los ingenieros de software usan como punto de partida para el diseño del sistema. 
+        Idealmente, los requerimientos del sistema deben describir de manera simple el comportamiento externo del sistema y sus restricciones operacionales.
+    </h4></p>
+    <details>
+        <summary><span class="subrayados">Es prácticamente imposible excluir toda la información de diseño. Para ello existen varias razones:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Tal vez se tenga que diseñar una arquitectura inicial del sistema para ayudar a estructurar la especificación de requerimientos. </li>
+            <li>En la mayoría de los casos, los sistemas deben interoperar con los sistemas existentes.</li>
+            <li>Quizá sea necesario el uso de una arquitectura específica para cubrir los requeri- mientos no funcionales.</li>
+        </ul>
+    </details>
+    <p><h4>Los requerimientos del usuario se escriben casi siempre en lenguaje natural, complementado con diagramas y tablas adecuados en el documento de requerimientos. 
+        Los modelos gráficos son más útiles cuando es necesario mostrar cómo cambia un estado o al describir una secuencia de acciones. 
+    </h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Especificación en lenguaje natural.</p></center></h1>
+    <p><h4>El lenguaje natural se usa para escribir los requerimientos de software. Es expresivo, intuitivo y universal.</h4></p>
+    <details>
+        <summary><span class="subrayados">Para minimizar la interpretación errónea al escribir los requerimientos en lenguaje natural, se recomienda seguir algunos lineamientos sencillos:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Elabore un formato estándar.</li>
+            <li>Utilice el lenguaje de manera clara.</li>
+            <li>Use texto resaltado.</li>
+            <li>No deduzca que los lectores entienden el lenguaje técnico de la ingeniería de software.</li>
+            <li>Asocie una razón con cada requerimiento de usuario.</li>
+        </ul>
+    </details>
+    <details>
+        <summary><span class="subrayados">Especificación estructurada de un requerimiento para una bomba de insulina.</span></summary>
+        <center><img src="bomba de insulina2.png"></center>
+    </details>
+</article> 
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Especificaciones estructuradas.</p></center></h1>
+    <p><h4>El lenguaje natural estructurado es una manera de escribir requerimientos del sistema.
+        El lenguaje natural estructurado es una manera de escribir requerimientos del sistema.
+    </h4></p>
+    <details>
+        <summary><span class="subrayados">Cuando use una forma estándar para especificar requerimientos funcionales, debe incluir la siguiente información:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Una descripción de la función.</li>
+            <li>Una descripción de sus entradas.</li>
+            <li>Una descripción de sus salidas.</li>
+            <li>Información sobre los datos requeridos.</li>
+            <li>Una descripción de la acción.</li>
+            <li>Si se usa un enfoque funcional, una precondición establece lo que debe ser verda- dero antes de llamar a la función, y una postcondición especifica lo que es verdadero después de llamar a la función.</li>
+            <li>Una descripción de los efectos colaterales.</li>
+        </ul>
+    </details>
+    <details>
+        <summary><span class="subrayados">Vista en espiral del proceso de ingeniería de requerimientos.</span></summary>
+        <center><img src="requerimientos.png"></center>
+    </details>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Procesos de ingeniería de requerimientos.</p></center></h1>
+    <h6><center><p style="background-color: #f1aeff;">studios de factibilidad.</p></center></h6>
+    <p><h4>Un estudio de factibilidad es un breve estudio enfocado que debe realizarse con oportunidad en el proceso de IR.</h4></p>
+    <p><h4>Algunas personas consideran la ingeniería de requerimientos como el proceso de aplicar un método de análisis estructurado.
+        Prácticamente en todos los sistemas cambian los requerimientos. Las personas implica- das desarrollan una mejor comprensión de qué quieren que haga el software.
+    </h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Adquisición y análisis de requerimientos.</p></center></h1>
+    <p><h4>Después de un estudio de factibilidad inicial, la siguiente etapa del proceso de ingeniería de requerimientos es la adquisición y el análisis de requerimientos.</h4></p>
+    <details>
+   <summary><span class="subrayado">El proceso de adquisición y análisis de requerimientos.</span></summary>
+   <center><img src="analisis.png"></center>
+    </details>
+    <p><h4>En una organización, la adquisición y el análisis de requerimientos pueden involucrar a diversas clases de personas.</h4></p>
+    <details>
+        <summary><span class="subrayados">Las actividades del proceso son:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Descubrimiento de requerimientos.</li>
+                <li>Clasificación y organización de requerimientos.</li>
+                <li>Priorización y negociación de requerimientos.</li>
+                <li>Especificación de requerimientos.</li>
+            </ul>
+    </details>
+    <p><h4>El ciclo concluye cuando está completo el documento de requerimientos.</h4></p>
+    <details>
+        <summary><span class="subrayados">La adquisición y la comprensión de los requerimientos por parte de los participantes del sistema es un proceso difícil por diferentes razones:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Los participantes con frecuencia no saben lo que quieren.</li>
+                <li>Los participantes en un sistema expresan naturalmente los requerimientos con sus tér- minos y conocimientos implícitos de su trabajo.</li>
+                <li>Diferentes participantes tienen distintos requerimientos y pueden expresarlos en variadas formas.</li>
+                <li>Factores políticos llegan a influir en los requerimientos de un sistema.</li>
+                <li>El ambiente económico y empresarial.</li>
+            </ul>
+    </details>
+    <p><h4>
+        Resulta ineludible que diferentes participantes tengan diversas visiones de la impor- tancia y prioridad de los requerimientos y, algunas veces, dichas visiones están en conflicto.</h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Descubrimiento de requerimientos.</p></center></h1>
+    <p><h4>El descubrimiento de requerimientos (llamado a veces adquisición de requerimientos) es el proceso de recopilar información sobre el sistema requerido y los sistemas existentes.
+        El descubrimiento de requerimientos (llamado a veces adquisición de requerimientos) es el proceso de recopilar información sobre el sistema requerido y los sistemas existentes.
+        Además de los participantes del sistema, se observa que los requerimientos también pueden venir del dominio de aplicación y de otros sistemas que interactúan con el sistema a especificar. 
+    </h4></p>
+</article>
+
+<article>
+    <h1><center><p style="background-color: #f1aeff;">Entrevistas.</p></center></h1>
+    <p><h4>Las entrevistas formales o informales con participantes del sistema son una parte de la mayoría de los procesos de ingeniería de requerimientos.</h4></p>
+    <details>
+        <summary><span class="subrayados">Las entrevistas son de dos tipos:</span></summary>
+        <ul class="lista-letra-pequena">
+            <li>Entrevistas cerradas, donde los participantes responden a un conjunto de preguntas preestablecidas.</li>
+            <li>Entrevistas abiertas, en las cuales no hay agenda predefinida.</li>
+        </ul>
+    </details>
+        <p><h4>Las entrevistas con losLas entrevistas son valiosas para lograr una comprensión global. participantes son por lo general una combinación de ambas.
+            Las entrevistas son valiosas para lograr una comprensión global.
+        </h4></p>
+        <details>
+            <summary><span class="subrayados">Por dos razones resulta difícil asimilar el conocimiento de dominio a través de entrevistas:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Todos los especialistas en la aplicación usan terminología y jerga que son específicos de un dominio.</li>
+                <li>Cierto conocimiento del dominio es tan familiar a los participantes que encuentran difícil de explicarlo</li>
+            </ul>
+        </details>
+        <p><h4>Las entrevistas tampoco son una técnica efectiva para adquirir conocimiento sobre los requerimientos y las restricciones de la organización.
+            Las estructuras publicadas de la organización rara vez coinciden con la realidad de la toma de decisiones en una organización
+        </h4></p>
+        <details>
+            <summary><span class="subrayados">Los entrevistadores efectivos poseen dos características:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Tienen mentalidad abierta, evitan ideas preconcebidas.</li>
+                <li>Instan al entrevistado con una pregunta de trampolín para continuar la plática, dar una propuesta de requerimientos o trabajar juntos en un sistema de prototipo.</li>
+            </ul>
+        </details>
+        <p><h4>La información de las entrevistas se complementa con otra información del sistema de documentación que describe los procesos empresariales o los sistemas existentes, las observaciones del usuario, etcétera.</p></h4>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #f1aeff;">Escenarios.</p></center></h1>
+        <p><h4>Los escenarios son particularmente útiles para detallar un bosquejo de descripción de requerimientos.</p></h4>
+        <p><h4>Se suman detalles a éste para crear una representación completa de dicha interacción.</h4></p>
+        <details>
+            <summary><span class="subrayados">En su forma más general, un escenario puede incluir:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Una descripción de qué esperan el sistema y los usuarios cuando inicia el escenario.</li>
+                <li>Una descripción en el escenario del flujo normal de los eventos.</li>
+                <li>Una descripción de qué puede salir mal y cómo se manejaría.</li>
+                <li>Información de otras actividades que estén en marcha al mismo tiempo.</li>
+                <li>Una descripción del estado del sistema cuando termina el escenario.</li>
+            </ul>
+        </details>
+        <details>
+            <summary><span class="subrayados">Escenario para recabar historia médica en MHC-PMS.</span></summary>
+            <center><img src="suposición.png" width="" height="" alt=""></center>
+        </details>
+        <p><h4>La adquisición basada en escenario implica trabajar con los participantes para identificar escenarios y captar detalles a incluir en dichos escenarios.</h4></p>
+    </article>
+    <article>
+        <h1><center><p style="background-color: #f1aeff;">Casos de uso.</p></center></h1>
+        <p><h4>Los casos de uso son una técnica de descubrimiento de requerimientos que se introdujo.</h4></p>
+        <details>
+            <summary><span class="subrayados">Casos de uso para el MHC-PMS.</span></summary>
+            <center><img src="auxiliar.png" width="" height="" alt=""></center>
+        </details>
+        <p><h4>Los casos de uso se documentan con el empleo de un diagrama de caso de uso de alto nivel.</h4></p>
+        <p><h4>Los escenarios y los casos de uso son técnicas efectivas para adquirir requerimientos. El UML es un estándar de facto para modelado orientado a objetos, así 
+            que los casos de uso y la adquisición basada en casos ahora se utilizan ampliamente para adquisición de requerimientos.</h4></p>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #f1aeff;">Etnografía.</p></center></h1>
+        <p><h4>Los sistemas de software no existen aislados. La etnografía es una técnica de observación que se usa para entender los procesos operacionales y ayudar a derivar requerimientos de apoyo para dichos procesos. 
+            Las personas con frecuencia encuentran muy difícil articular los detalles de su trabajo, porque es una segunda forma de vida para ellas.</h4></p>
+            <details>
+                <summary><span class="subrayados">Etnografía y creación de prototipos para análisis de requerimientos.</span></summary>
+                <center><img src="analisis 2.png" width="" height="" alt=""></center>
+            </details>
+            <details>
+                <summary><span class="subrayados">La etnografía es muy efectiva para descubrir dos tipos de requerimientos:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Requerimientos que se derivan de la forma en que realmente trabaja la gente.</li>
+                    <li>Requerimientos que se derivan de la cooperación y el conocimiento de las activida- des de otras personas.</li>
+                </ul>
+            </details>
+            <p><h4>La etnografía puede combinarse con la creación de prototipos. Los estudios etnográficos pueden revelar detalles críticos de procesos, que con fre- cuencia se pierden con otras técnicas de adquisición de requerimientos.</h4></p>
+    </article>
+
+    <article>
+        <h1><center><p style="background-color: #f1aeff;">Validación de requerimientos.</p></center></h1>
+        <p><h4>La validación de requerimientos es el proceso de verificar que los requerimientos definan realmente el sistema que en verdad quiere el cliente. 
+            En general, el costo por corregir un problema de requerimientos al hacer un cambio en el sistema es mucho mayor que reparar los errores de diseño o codificación. 
+            Durante el proceso de validación de requerimientos, tienen que realizarse diferentes tipos de comprobaciones sobre los requerimientos contenidos en el documento de requerimientos. 
+        </h4></p>
+        <details>
+            <summary><span class="subrayados">Dichas comprobaciones incluyen:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Comprobaciones de validez.</li>
+                <li>Comprobaciones de consistencia.</li>
+                <li>Comprobaciones de totalidad.</li>
+                <li>Comprobaciones de realismo.</li>
+                <li>Verificabilidad.</li>
+            </ul>
+        </details> 
+        <details>
+            <summary><span class="subrayados">Evolución de los requerimientos.</span></summary>
+            <center><img src="analisis 2.png" width="" height="" alt=""></center> 
+        </details>
+        <details>
+            <summary><span class="subrayados">Hay algunas técnicas de validación de requerimientos que se usan individualmente o en conjunto con otras:</span></summary>
+            <ul class="lista-letra-pequena">
+                <li>Revisiones de requerimientos.</li>
+                <li>Creación de prototipos.</li>
+                <li>Generación de casos de prueba.</li>
+            </ul>
+        </details>
+        <p><h4>No hay que subestimar los problemas incluidos en la validación de requerimientos.</h4></p>
+        
+        <article>
+            <h1><center><p style="background-color: #f1aeff;">Administración de requerimientos.</p></center></h1>
+            <p><h4>Los requerimientos para los grandes sistemas de software siempre cambian.</h4></p>
+            <h1><center><p style="background-color: #f1aeff;">Requerimientos duraderos y volátiles.</p></center>
+                <p><h4>Algunos requerimientos son más susceptibles a cambiar que otros. Los requerimientos duraderos son los requerimientos que se asocian con las actividades centrales.</h4></p>
+                <details>
+                    <summary><span class="subrayados">Existen muchas razones por las que es inevitable el cambio:</span></summary>
+                    <ul class="lista-letra-pequena">
+                        <li>Los ambientes empresarial y técnico del sistema siempre cambian después de la ins- talación.</li>
+                        <li>Los individuos que pagan por un sistema y los usuarios de dicho sistema, por lo general, no son los mismos.</li>
+                        <li>Los sistemas grandes tienen regularmente una comunidad de usuarios diversa, en la cual muchos individuos tienen diferentes requerimientos y prioridades que quizás estén en conflicto o sean contradictorios</li>
+                    </ul>
+                </details>
+                <p><h4>La administración de requerimientos es el proceso de comprender y controlar los cambios en los requerimientos del sistema.</h4></p>
+        </article>
+
+        <article>
+            <h1><center><p style="background-color: #f1aeff;">Planeación de la administración de requerimientos.</p></center></h1>
+            <p><h4>La planeación es una primera etapa esencial en el proceso de administración de requerimientos</h4></p>
+            <details>
+                <summary><span class="subrayados">Durante la etapa de administración de requerimientos, usted tiene que decidir sobre:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Identificación de requerimientos.</li>
+                    <li>Un proceso de administración del cambio.</li>
+                    <li>Políticas de seguimiento.</li>
+                    <li>Herramientas de apoyo.</li>
+                </ul>
+            </details>
+            <details>
+                <summary><span class="subrayados">Administración del cambio de requerimientos.</span></summary>
+                <center><img src="identificacion.png" width="" height="" alt=""></center>
+            </details>
+            <details>
+                <summary><span class="subrayados">La administración de requerimientos necesita apoyo automatizado y herramientas de software, para lo cual deben seleccionarse durante la fase de planeación. Se necesitan herramientas de apoyo para:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Almacenamiento de requerimientos.</li>
+                    <li>Administración del cambio.</li>
+                    <li>Administración del seguimiento.</li>
+                </ul>
+            </details>
+            <p><h4>Para sistemas pequeños, quizá no sea necesario usar herramientas especializadas de administración de requerimientos.</h4></p>
+        </article>   
+        <article>
+            <h1><center><p style="background-color: #f1aeff;">Administración del cambio en los requerimientos.</p></center></h1>
+            <details>
+                <summary><span class="subrayados">Existen tres etapas principales de un proceso de administración del cambio:</span></summary>
+                <ul class="lista-letra-pequena">
+                    <li>Análisis del problema y especificación del cambio.</li>
+                    <li>Análisis del cambio y estimación del costo.</li>
+                    <li>Implementación del cambio.</li>
+                </ul>
+            </details>
+            <p><h4>Si un nuevo requerimiento tiene que implementarse urgentemente, siempre existe la tentación para cambiar el sistema y luego modificar de manera retrospectiva el documento de requerimientos.</h4></p>
+            <span class="subrayados">&copy; Maribel 2023</span>
+        </article>
+
+        <a href="Capitulo 3.html" class="btn btn-next">Atrás</a>
+        <a href="Capitulo 5.html" class="btn btn-next">Siguiente</a>
+        <a class="boton-inicio" href="index.html">Volver a inicio</a>

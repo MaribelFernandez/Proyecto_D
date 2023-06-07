@@ -1,0 +1,101 @@
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #008CBA;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn-next {
+    background-color: #bfbcff;
+  }
+  
+  .btn:hover {
+    background-color: #d4d2ff;
+    color: #000000;
+  }
+
+  .selector {
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-size: 20px;
+  } 
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #b5b2ff;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #c3c1ff;
+  }
+
+  
+summary {
+      font-size: 15px;
+    }
+
+    @keyframes glitter {
+      0% { color: #b4b1ff;}
+      25% { color: #c3c1ff;}
+      50% { color: #d4d2ff;}
+      75% { color: #dfdeff;}
+      100% { color: #e7e6ff;}
+    }
+
+
+
+.glitter-title {
+      animation: glitter 2s linear infinite;
+    }
+
+.lista-letra-pequena li {
+      font-size: 16px;
+}
+
+article {
+	border: 3px solid #cccbff;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+article h1 {
+	margin-top: 0;
+}
+    
+.subrayados {
+  text-decoration: underline;
+  text-decoration-color: #d4d2ff;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
+.boton-inicio {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d4d3ff;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #d3d1fe;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
